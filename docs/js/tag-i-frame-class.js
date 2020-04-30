@@ -1,6 +1,7 @@
 class TagIFrame {
-    constructor(src) {
+    constructor(src, id) {
        //assign properties
+       this.id = id; //id attribute for element
        this.class = 'class ="webcam-vid"';
        this.width = 'width="560"';
        this.height = 'height="315"';
