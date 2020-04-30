@@ -40,16 +40,14 @@
 
 </head>
 <body>
+    <!--navigation bar-->
     <nav>
         <a href="#list">list</a>
-        <a href="#list">list</a>
-
-            
+        <a href="#webcams">webcams</a>
     </nav>
 
     
     <!--Features I'd Like to add-->
-
     <h1>Features I'd Like To Add</h1>
     <ul id="list">
         <li>Webcams</li>
@@ -61,6 +59,47 @@
 
     </ul>
     
+
+    <!--Webcams-->
+    <h3 id="webcams">Webcams</h3>
+        <p>Choose your monster's features:</p>
+
+        <div>
+        <input type="checkbox" id="UT-campus" name="UT-campus">
+        <label for="UT-campus">The University of Tampa Live Webcam</label>
+        </div>
+
+        <div>
+        <input type="checkbox" id="UT-riverfront" name="UT-riverfront">
+        <label for="UT-riverfront">The University of Tampa - Riverfront Live Webcam</label>
+        </div>
+
+        
+    <div id="webcam-create"></div>
+
+
+
+    <div><a class ="webcam-link" href="https://youtu.be/GLCMF6GhPRA">The University of Tampa - Riverfront Live Webcam</a></div>
+    <iframe 
+        class ="webcam-vid"
+        width="560" 
+        height="315" 
+        src="https://www.youtube-nocookie.com/embed/GLCMF6GhPRA" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+    <div><a class ="webcam-link" href="https://youtu.be/bB96qObNTSU">The University of Tampa Live Webcam</a></div>
+    <iframe 
+        class ="webcam-vid"
+        width="560" 
+        height="315" 
+        src="https://www.youtube-nocookie.com/embed/bB96qObNTSU" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
     <!-- scripts-->
     <script type = "text/javascript"  src = "js/main.js"></script>
