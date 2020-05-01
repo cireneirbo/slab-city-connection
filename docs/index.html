@@ -70,13 +70,11 @@
         </div>
 
         <div>
-        <input type="checkbox" id="UT-riverfront" name="UT-riverfront">
+        <input type="checkbox" id="UT-riverfront" name="UT-riverfront" onclick="displayWebcam(id)">
         <label for="UT-riverfront">The University of Tampa - Riverfront Live Webcam</label>
         </div>
-
-        <div>
-            <button id="button">The University of Tampa - Riverfront Live Webcam</button>
-        </div>
+ 
+        <div id="all-webcams-created"></div>
 
         
     <div id="webcam-create"></div>
@@ -107,6 +105,7 @@
 
     <!-- scripts-->
     <script type = "text/javascript"  src = "js/main.js"></script>
+    <script type = "text/javascript"  src = "js/tag-i-frame-class.js"></script>
 
     <!--- In-line Script-->
     <script>

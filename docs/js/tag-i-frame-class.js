@@ -13,7 +13,10 @@ class TagIFrame {
     //define methods
  }
 
-
- module.exports = {
+/*
+module.exports = {
      TagIFrame: TagIFrame
- }
+ }*/
+export {
+    TagIFrame
+}
