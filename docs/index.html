@@ -65,19 +65,18 @@
         <p>Choose the webcams you'd like to view:</p>
 
         <div>
-        <input type="checkbox" id="UT-campus" name="UT-campus">
+        <input type="checkbox" id="UT-campus" name="UT-campus" class="checkbox-listener">
         <label for="UT-campus">The University of Tampa Live Webcam</label>
         </div>
 
         <div>
-        <input type="checkbox" id="UT-riverfront" name="UT-riverfront" onclick="displayWebcam(id)">
+        <input type="checkbox" id="UT-riverfront" name="UT-riverfront" class="checkbox-listener" onclick="displayWebcam()">
         <label for="UT-riverfront">The University of Tampa - Riverfront Live Webcam</label>
         </div>
  
         <div id="all-webcams-created"></div>
 
         
-    <div id="webcam-create"></div>
 
 
 
@@ -104,8 +103,7 @@
     </iframe> -->
 
     <!-- scripts-->
-    <script type = "text/javascript"  src = "js/main.js"></script>
-    <script type = "text/javascript"  src = "js/tag-i-frame-class.js"></script>
+    <script type="text/javascript"  src="js/main.js"></script>
 
     <!--- In-line Script-->
     <script>

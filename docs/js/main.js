@@ -1,21 +1,21 @@
-const tagIFrame = required('./tag-i-frame-class.js');
-
 //webcam objects
-function initializeVariables()  {
-const webcamUTCampus = {
-    src: "https://youtu.be/bB96qObNTSU", 
-    id: "UT-campus"
-}
+//function initializeVariables()  {
+    const webcamUTCampus = {
+        src: "bB96qObNTSU", 
+        id: "UT-campus"
+    }
 
-const webcamUTRiverfront = {
-    src: "https://youtu.be/GLCMF6GhPRA", 
-    id: "UT-riverfront"
-}
+    const webcamUTRiverfront = {
+        src: "GLCMF6GhPRA", 
+        id: "UT-riverfront"
+    }
 
-//array of webcam objects
-const webcamArray = [webcamUTCampus, webcamUTRiverfront]; 
+    //array of webcam objects
+    const webcamArray = [webcamUTCampus, webcamUTRiverfront]; 
+    return webcamArray;
+//}
 
-}
+
 /*<div><a class ="webcam-link" href="https://youtu.be/GLCMF6GhPRA">The University of Tampa - Riverfront Live Webcam</a></div>
 <iframe 
     class ="webcam-vid"
@@ -29,11 +29,8 @@ const webcamArray = [webcamUTCampus, webcamUTRiverfront];
 </iframe> ];*/
 
 
-
-//const emptyWebcamDiv = document.getElementById("webcams").innerHTML;
-
 //stereamline it with no dry
-function createWebcamDiv(id) {
+function createWebcamDiv(id, webcamArray) {
     //create div container
     const newDiv = document.createElement('div'); 
     newDiv.innerHTML = "new div";
@@ -41,34 +38,42 @@ function createWebcamDiv(id) {
     currentDiv.appendChild(newDiv);
 
     //loop to find object from id
-    //const webcamObject = {};
-    for(const cam of webcamArray) {
+    //const webcamObject = {}; 
+    /*for(const cam of webcamArray) {
         if (cam.id === id) {
-            const webcamObject = cam;
+            //webcamObject = cam;
+            alert(virtoy);
+            newDiv.setAttribute("href", cam.src);
         }
-    }
+    }*/
     //set attributes
-    newDiv.setAttribute("href", webcamObject.src);
+    newDiv.setAttribute("href", "https://youtu.be/GLCMF6GhPRA");
 
     //create iframe tag
 
-//create the iFrame tag with the video from the class IFrame/webcamobject generated from webcamArray
+
 }
 
 function removeWebcamDiv() {
     
 }
 
+/*
+let search = document.getElementsByClassName("checkbox-listener");
+search.addEventListener('click', displayWebcam(id), false);*/
+
 function displayWebcam(id) {
     //assign div the video feed from array html tags strings
-    const checkBox = document.getElementById(id);
     initializeVariables();
+    const checkBox = document.getElementById(id);
+    
+
     if (checkBox.checked === true) {
-        alert('that worked');
         //function for creating a video in div id="all-videos-created"
         createWebcamDiv(id);
     } else {
         //function for removing a video in div id="all-videos-created"
+        removeWebcamDiv(id);
     }
     
 }
